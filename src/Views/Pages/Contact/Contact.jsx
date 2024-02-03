@@ -21,7 +21,7 @@ const Contact = () => {
     const getDetails = async () => {
         try {
             const response = await axios.post(
-                "http://localhost:8080/contacts",
+                "https://shy-puce-lemming-tux.cyclic.app/contacts",
                 details
             );
         } catch (error) {

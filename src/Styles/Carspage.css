@@ -10,7 +10,20 @@
     overflow: visible;
     margin-top: 1rem;
 }
-
+#btn{
+    color: white;
+    background-color: salmon;
+    padding: 7px 10px;
+    border: none;
+}
+#btn:hover{
+    background-color: rgb(233, 96, 96);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+details{
+    width: 130px;
+}
 .header_image_div {
     width: 90%;
     align-items: center;

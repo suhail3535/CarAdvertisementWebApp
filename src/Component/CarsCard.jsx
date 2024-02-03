@@ -10,7 +10,7 @@ const CarsCard = ({id,image,name,brand,year,type,price,address}) => {
           <p>Type:{type}</p>
           <p>Price:{price}</p>
           <p>Location:{address}</p>
-
+         <button id="btn">KnowMore</button>
 
     </div>
   )

@@ -7,7 +7,7 @@ const CarPage = () => {
 
   const GetCarDetails = async () => {
     try {
-      const responce = await axios.get("http://localhost:8080/cars")
+      const responce = await axios.get("https://shy-puce-lemming-tux.cyclic.app/cars")
       setCars(responce.data)
 
     } catch (error) {
