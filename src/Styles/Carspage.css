@@ -1,0 +1,165 @@
+.car_details_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 1rem;
+    color: rgb(77, 75, 75);
+
+    position: relative;
+    z-index: 98;
+    overflow: visible;
+    margin-top: 1rem;
+}
+
+.header_image_div {
+    width: 90%;
+    align-items: center;
+    object-fit: cover;
+    margin: 20px auto;
+    position: relative;
+    margin-left: 50px;
+
+    display: inline-block;
+}
+
+.header_image_div img {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    margin-top: 50px;
+}
+.image-text {
+    margin-top: 35px;
+    position: absolute;
+    background: linear-gradient(to right, #3399ff, #9933ff, #6600cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+
+    left: 0px;
+    top: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: detailsheading;
+}
+
+@keyframes detailsheading {
+    from {
+        left: 200;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+.cars_card_wrapper {
+    padding: 10px;
+    /* text-align: center; */
+}
+
+.cars_card_wrapper img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40%;
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.cars_card_wrapper h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.cars_card_wrapper p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* --------Media Query------- */
+/* ---------for Mobile screen-------- */
+@media screen and (min-width: 280px) and (max-width: 420px) {
+    .car_details_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 1rem;
+        color: rgb(77, 75, 75);
+
+        position: relative;
+        z-index: 98;
+        overflow: visible;
+        margin-top: 1rem;
+    }
+    .header_image_div {
+        width: 90%;
+        align-items: center;
+        object-fit: cover;
+        margin: auto;
+        margin-left: 20px;
+
+        position: relative;
+        display: inline-block;
+    }
+
+    .header_image_div img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        height: 500px;
+        margin-top: 50px;
+    }
+    .image-text {
+        display: none;
+    }
+}
+
+/* ---------for Tablet screen-------- */
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    .car_details_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 1rem;
+        color: rgb(77, 75, 75);
+
+        position: relative;
+        z-index: 98;
+        overflow: visible;
+        margin-top: 1rem;
+    }
+    .image-text {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .header_image_div {
+        width: 90%;
+
+margin: auto;
+margin-left: 40px;
+    }
+
+    .header_image_div img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        height: 500px;
+        margin-top: 50px;
+    }
+}

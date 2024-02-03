@@ -1,0 +1,235 @@
+.parent_card {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.form_control_div {
+    width: 40%;
+    margin: 8rem auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 1rem;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* border: 1px dotted gray; */
+    border-radius: 5px;
+}
+
+.alert_box{
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_div {
+    width: 25%;
+    margin: 3rem auto;
+}
+.submit_btn {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+
+    border-radius: 0.8rem;
+}
+.submit_btn:hover {
+    background-color: rgb(230, 218, 56);
+        cursor: pointer;
+        transition: background-color 1s
+}
+.form_control_div textarea {
+    overflow: hidden;
+    resize: none;
+}
+#success_toast {
+    color: white;
+    background-color: rgba(92, 241, 92, 0.863);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+#un_success_toast {
+    color: white;
+    background-color: rgb(231, 62, 62);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+#details_div {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+#details_div img {
+    width: 40%;
+    /* border: 1px solid teal; */
+    display: flex;
+    margin: auto;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+}
+#btn_cont_div {
+    /* border: 2px solid rgb(43, 255, 0); */
+    width: 40%;
+    padding-top: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.edit_btn {
+    background-color: aliceblue;
+
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+.del_btn {
+    background-color: aliceblue;
+
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.edit_btn svg {
+    color: green;
+    font-size: 1.2rem;
+}
+.del-btn svg {
+    color: red;
+    font-size: 1.5rem;
+}
+
+#container-div {
+    width: 40%;
+    margin: 5rem auto;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#container-div img {
+    width: 40%;
+
+    display: flex;
+    margin: auto;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.product-card{
+
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.product-card img {
+    width: 50%;
+
+    display: flex;
+    margin: auto;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------Media Query---------- */
+/* for mobile/tablet screen */
+@media screen and (min-width:280px) and (max-width:768px) {
+.form_control_div {
+    width: 85%;
+    margin: 3rem auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 1rem;
+
+    border: 1px dotted gray;
+    border-radius: 5px;
+}
+.form_control_div input,textarea{
+    border: .5px solid gray;
+}
+.form_control_div textarea{
+    border: .5px solid gray;
+}
+.btn_div {
+    width: 30%;
+    margin: 3rem auto;
+}
+.submit_btn {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+
+    border-radius: 0.8rem;
+}
+
+
+#btn_cont_div {
+    /* border: 2px solid rgb(43, 255, 0); */
+    width: 40%;
+    padding-top: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.edit_btn {
+    background-color: aliceblue;
+
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+.del_btn {
+    background-color: aliceblue;
+
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.edit_btn svg {
+    color: green;
+    font-size: 1.2rem;
+}
+.del-btn svg {
+    color: red;
+    font-size: 1.5rem;
+}
+#container-div {
+    width: 90%;
+    margin: 5rem auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    font-size: 1.5rem;
+
+    padding: 1rem;
+}
+
+#container-div img {
+    width: 40%;
+
+    display: flex;
+    margin: auto;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+}
+}
+

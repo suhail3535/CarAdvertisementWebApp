@@ -1,0 +1,48 @@
+.login_form {
+    /* border: 1px solid teal; */
+    width: 40%;
+}
+
+#register_form_container button:hover {
+    background: linear-gradient(to right, #3399ff, #9933ff, #6600cc);
+    transition: background-color 2s
+}
+.login_form input{
+    border: 1px solid rgba(184, 182, 182, 0.795);
+}
+/* ---------Media Query------- */
+/* --------For Mobile Screen------- */
+@media screen and (min-width:280px) and (max-width:420px) {
+
+    .login_form {
+        width: 100%;
+    }
+
+    #register_form_container {
+        width: 100%;
+
+    }
+
+
+
+}
+
+@media screen and (min-width:421px) and (max-width:768px) {
+
+    .login_form {
+        width: 90%;
+
+    }
+
+    .login_form input {
+        border: 1px solid gray;
+
+    }
+
+    #register_form_container {
+        width: 100%;
+
+    }
+
+
+}
